@@ -4,7 +4,7 @@
     <title> Tienda PHP  </title>
   </head>
   <body>
-    <? php 
+    <?php 
       $ name = "Tienda PHP" ;
       $ crédito = 1000 ;
 
