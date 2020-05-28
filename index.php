@@ -33,6 +33,14 @@
 		$AddedTax = $monto * $taxRate ;  // cantidad = 800, impuesto = .0825 
 		echo  $AddedTax ;
 		
+		function tax_calc ($cantidad , $impuestos ) {
+		$calculate_tax = $cantidad * $impuestos ;
+		$cantidad = round ( $cantidad + $Calculate_tax , 2 );
+		return  $monto ;
+		echo  tax_calc ( 750 , 0.223 )
+  }
+  
+  
     ?> 
   </body> 
 </html>
