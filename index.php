@@ -4,7 +4,7 @@
     <title>Tienda PHP</title>
   </head>
   <body>
-    <? php 
+    <?php 
     // Usando dos barras diagonales creamos comentarios en php. 
     // Dentro de la etiqueta php, podemos insertar valores en nuestro HTML. 
     echo "<h1> ¡Bienvenido! </h1>";
