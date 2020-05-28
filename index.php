@@ -9,7 +9,7 @@
 			$crédito = 1000 ;
 
 	    echo  "<h1> Bienvenido a " . $name . "</h1>" ;
-	    echo  "<h2> Tienes $" . $crédito . " de crédito en tu b. </h2>" ;
+	    echo  "<h2> Tienes $" . $crédito . " de crédito en tu billetera. </h2>" ;
 
 		$productos [ 'Computador' ] = 750 ;
 	    $productos [ 'Auto' ] = 15000 ;
