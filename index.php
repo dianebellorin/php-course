@@ -4,10 +4,12 @@
     <title>Tienda PHP</title>
   </head>
   <body>
-    <?php 
-    // Usando dos barras diagonales creamos comentarios en php. 
-    // Dentro de la etiqueta php, podemos insertar valores en nuestro HTML. 
-    echo "<h1> ¡Bienvenido! </h1>";
+    <? php 
+      $ name = "Tienda PHP" ;
+      $ crédito = 1000 ;
+
+      echo  "<h1> Bienvenido a" . $ nombre . "! </h1>" ;
+      echo  "<h2> Tienes $" . $ crédito . "en tu billetera. </h2>" ;
     ?> 
   </body> 
 </html>
