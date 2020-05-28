@@ -4,7 +4,7 @@
     <title> Tienda PHP  </title>
   </head>
   <body>
-    <? php 
+    <?php 
 	    $name = "Tienda PHP" ;
 			$crédito = 1000 ;
 
@@ -16,10 +16,12 @@
 	    $productos [ 'iPhone' ] = 1000 ;
 	    $productos [ 'Tostadora' ] = 75 ;
 
-	    foreach ( $productos  como  $clave => $valor ) {
-		     echo  "<p> El" . $clave . "costos" . $valor . "</p>" ;
+	    foreach ( $productos  as  $clave => $valor ) {
+			if ( $valor <= $crédito ) {
+		     echo  "<p> . $clave . "</p>" ;
 	    }
-
+		echo  "<h2> Artículos que puede pagar </h2>" ;
+		
     ?> 
   </ body > 
 </ html >
