@@ -15,6 +15,7 @@
 	    $productos [ 'Auto' ] = 15000 ;
 	    $productos [ 'iPhone' ] = 1000 ;
 	    $productos [ 'Tostador' ] = 75 ;
+		
 
 	    foreach ( $productos  as  $clave => $valor ) {
 		 echo  "<p> El " . $clave . " cuesta $" . $valor . "</p>" ;
@@ -27,6 +28,11 @@
 		    	 echo  "<p>" . $clave . "</p>" ;
 		}
 	}
+		$monto = 800 ;
+		$taxRate = 0.0825 ;
+		$AddedTax = $monto * $taxRate ;  // cantidad = 800, impuesto = .0825 
+		echo  $AddedTax ;
+		
     ?> 
   </body> 
 </html>
