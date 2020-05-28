@@ -8,20 +8,25 @@
 	    $name = "Tienda PHP" ;
 			$crédito = 1000 ;
 
-	    echo  "<h1> Bienvenido a" . $name . "</h1>" ;
+	    echo  "<h1> Bienvenido a " . $name . "</h1>" ;
 	    echo  "<h2> Tienes $" . $crédito . " en tu billetera. </h2>" ;
 
-		$productos [ 'Computadora' ] = 750 ;
+		$productos [ 'Computador' ] = 750 ;
 	    $productos [ 'Auto' ] = 15000 ;
 	    $productos [ 'iPhone' ] = 1000 ;
-	    $productos [ 'Tostadora' ] = 75 ;
+	    $productos [ 'Tostador' ] = 75 ;
 
 	    foreach ( $productos  as  $clave => $valor ) {
-			if ( $valor <= $crédito ) {
-		     echo  "<p> . $clave . "</p>" ;
-	    }
-		echo  "<h2> Artículos que puede pagar </h2>" ;
-		
+		 echo  "<p> El " . $clave . " cuesta $" . $valor . "</p>" ;
+	}
+
+	    echo  "<h2> Artículos que puedes pagar </h2>" ;
+
+	     foreach ( $productos  as  $clave => $valor ) {
+		     if ( $valor <= $crédito ) {
+		    	 echo  "<p>" . $clave . "</p>" ;
+		}
+	}
     ?> 
-  </ body > 
-</ html >
+  </body> 
+</html>
