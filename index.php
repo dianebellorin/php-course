@@ -1,22 +1,22 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title> Tienda PHP  </title>
+    <title>PHP Store</title>
   </head>
   <body>
-    <?php 
-      $ name = "Tienda PHP" ;
-      $ crédito = 1000 ;
+    <?php
+      $name = "PHP Store";
+      $credit = 1000; 
 
-      echo  "<h1> Bienvenido a" . $ name . "! </h1>" ;
-      echo  "<h2> Tienes $" . $ crédito . "en tu billetera. </h2>" ;
+      echo "<h1>Welcome to ".$name."!</h1>";
+      echo "<h2>You have $".$credit." in your wallet.</h2>";
 
-	    $ productos [ 'Computadora' ] = 750 ;
-	    $ productos [ 'Auto' ] = 15000 ;
-	    $ productos [ 'iPhone' ] = 1000 ;
-	    $ productos [ 'Tostadora' ] = 75 ;
+	    $products['Computer']=750;
+	    $products['Car']=15000;
+	    $products['iPhone']=1000;
+	    $products['Toaster']=75;
 
-	    echo  "<p> Un auto cuesta $" . $ productos [ 'Auto' ]. "</p>" ;
-    ?> 
-  </ body > 
-</ html >
+	    echo "<p>A car costs $".$products['Car']."</p>";
+    ?>
+  </body>
+</html>
